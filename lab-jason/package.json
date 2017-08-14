@@ -8,11 +8,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Jason Logan",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.1.1",
     "mocha": "^3.5.0"
   }
 }
