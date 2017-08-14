@@ -4,7 +4,7 @@
   "description": "![DV](https://www.deltavcodeschool.com/wp-content/uploads/DeltaV.png) 01: Node Ecosystem\r ===",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/greet.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/dustinyschild/01-node_ecosystem#readme",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^3.5.0",
-    "should": "^11.2.1"
+    "assert": "^1.4.1",
+    "mocha": "^3.5.0"
   }
 }
