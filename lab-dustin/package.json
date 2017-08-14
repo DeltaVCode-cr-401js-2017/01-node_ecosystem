@@ -4,7 +4,11 @@
   "description": "![DV](https://www.deltavcodeschool.com/wp-content/uploads/DeltaV.png) 01: Node Ecosystem\r ===",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "mocha"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
   },
   "repository": {
     "type": "git",
