@@ -1,4 +1,4 @@
-function greetUser (name) {
+function greet (name) {
   if (typeof name !== 'string') {
     return null;
   } else {
@@ -6,4 +6,4 @@ function greetUser (name) {
   }
 }
 
-exports.greetUser = greetUser;
+exports.greetUser = greet;
