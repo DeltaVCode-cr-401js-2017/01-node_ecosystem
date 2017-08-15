@@ -1,5 +1,5 @@
 exports.add = (a, b) => {
-  if(isNaN(a) || isNaN(b)){
+  if(isNaN(a) || isNaN(b) || (a === null && b === null)){
     return null;
   }
   else{
@@ -8,7 +8,7 @@ exports.add = (a, b) => {
 };
 
 exports.sub = (a,b) => {
-  if(isNaN(a) || isNaN(b)){
+  if(isNaN(a) || isNaN(b) || (a === null && b === null)){
     return null;
   }
   else{

@@ -25,11 +25,18 @@ describe('arithmetic', function() {
       assert.strictEqual(arithmetic.add(8,9), 17);
     });
 
-    it('should return NULL when either argument is not a number', function() {
+    it('should return 8 when passed 8 and null', function() {
+      assert.strictEqual(arithmetic.add(8,null), 8);
+    });
+
+    it('should return NULL when either argument is not a number or null', function() {
       assert.strictEqual(arithmetic.add(8,'donkey'), null);
       assert.strictEqual(arithmetic.add('donkey',9), null);
     });
 
+    it('should return NULL if BOTH arguments are null', function() {
+      assert.strictEqual(arithmetic.add(null,null), null);
+    });
   });
 
   describe('#sub()', function() {
@@ -38,10 +45,17 @@ describe('arithmetic', function() {
       assert.strictEqual(arithmetic.sub(8,9), -1);
     });
 
-    it('should return NULL when either argument is not a number', function() {
+    it('should return 8 when passed 8 and null', function() {
+      assert.strictEqual(arithmetic.add(8,null), 8);
+    });
+
+    it('should return NULL when either argument is not a number or null', function() {
       assert.strictEqual(arithmetic.sub('mule',9), null);
       assert.strictEqual(arithmetic.sub(8,'mule'), null);
     });
 
+    it('should return NULL if BOTH arguments are null', function() {
+      assert.strictEqual(arithmetic.add(null,null), null);
+    });
   });
 });
