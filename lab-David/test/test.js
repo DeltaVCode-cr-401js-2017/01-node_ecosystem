@@ -20,7 +20,7 @@ describe('Arithmetic', function(){
       assert.strictEqual(operators.add(1, 1), 2);
     });
     it('should return null if passed non-numbers', function(){
-      assert.equal(operators.add('1', 1), null);
+      assert.strictEqual(operators.add('1', 1), null);
     });
   });
 });
@@ -31,7 +31,7 @@ describe('Arithmetic', function(){
       assert.strictEqual(operators.sub(1, 1), 0);
     });
     it('should return null if passed non-numbers', function(){
-      assert.equal(operators.sub('1', 1), null);
+      assert.strictEqual(operators.sub('1', 1), null);
     });
   });
 });
