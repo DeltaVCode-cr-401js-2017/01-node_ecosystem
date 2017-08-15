@@ -1,0 +1,1 @@
+This is a node application with some simple functions and tests to learn about mocha. There is a lib and test folder, lib contains the various functions while test contains the tests. The function greetUser says hello when passed the name of someone. The function add adds 2 numbers together passed through it while sub subtracts them.
