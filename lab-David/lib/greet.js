@@ -6,4 +6,4 @@ function greet (name) {
   }
 }
 
-exports.greetUser = greet;
+exports.greet = greet;
