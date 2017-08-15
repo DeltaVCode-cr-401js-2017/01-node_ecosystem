@@ -1,0 +1,61 @@
+const assert = require('assert');
+const greet = require('../lib/greet.js');
+const arithmetic = require ('../lib/arithmetic.js');
+
+
+describe('greet', function() {
+  describe('#greet()', function() {
+
+    it('should return "Hello World!"', function() {
+      assert.strictEqual(greet.greet('World!'), 'Hello World!');
+    });
+
+    it('should return NULL if an argument that is not a string is passed' , function() {
+      assert.strictEqual(greet.greet(true), null);
+    });
+
+  });
+});
+
+describe('arithmetic', function() {
+
+  describe('#add()', function() {
+
+    it('should return 17 when passed 8 and 9', function() {
+      assert.strictEqual(arithmetic.add(8,9), 17);
+    });
+
+    it('should return 8 when passed 8 and null', function() {
+      assert.strictEqual(arithmetic.add(8,null), 8);
+    });
+
+    it('should return NULL when either argument is not a number or null', function() {
+      assert.strictEqual(arithmetic.add(8,'donkey'), null);
+      assert.strictEqual(arithmetic.add('donkey',9), null);
+    });
+
+    it('should return NULL if BOTH arguments are null', function() {
+      assert.strictEqual(arithmetic.add(null,null), null);
+    });
+  });
+
+  describe('#sub()', function() {
+
+    it('should return -1 when passed 8 and 9', function() {
+      assert.strictEqual(arithmetic.sub(8,9), -1);
+    });
+
+    it('should return 8 when passed 8 and null', function() {
+      assert.strictEqual(arithmetic.add(8,null), 8);
+    });
+
+    it('should return NULL when either argument is not a number or null', function() {
+      assert.strictEqual(arithmetic.sub('mule',9), null);
+      assert.strictEqual(arithmetic.sub(8,'mule'), null);
+    });
+
+    it('should return NULL if BOTH arguments are null', function() {
+      assert.strictEqual(arithmetic.add(null,null), null);
+    });
+  });
+});
