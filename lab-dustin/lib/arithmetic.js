@@ -14,7 +14,7 @@ function subFunction(num1,num2) {
     || typeof num2 !== 'number'
     || isNaN(num1)
     || isNaN(num2)
-){
+  ){
     return null;
   }
   return num1 - num2;
