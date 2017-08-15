@@ -3,7 +3,6 @@
     "no-console": "off",
     "indent": [ "error", 2 ],
     "eslint quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "allowTemplateLiterals": true,
     "semi": ["error", "always"],
     "linebreak-style": [ "error", "unix" ]
   },
