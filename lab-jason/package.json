@@ -1,0 +1,19 @@
+{
+  "name": "lab-jason",
+  "version": "1.0.0",
+  "description": "lab day 1",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jason Logan",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
